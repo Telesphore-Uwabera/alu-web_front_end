@@ -1,24 +1,6 @@
 :root {
-  --font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* First choice */
-  --font-family-title: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* First choice */
-}
-
-/* Second choice */
-:root {
-  --font-family-base: Helvetica, 'Arial Black', sans-serif;
-  --font-family-title: Helvetica, 'Arial Black', sans-serif;
-}
-
-/* Third choice */
-:root {
-  --font-family-base: Arial, sans-serif;
-  --font-family-title: Arial, sans-serif;
-}
-
-/* Last choice */
-:root {
-  --font-family-base: sans-serif;
-  --font-family-title: sans-serif;
+  --font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Define font-family-base */
+  --font-family-title: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Define font-family-title */
 }
 
 body {

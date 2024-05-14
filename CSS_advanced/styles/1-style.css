@@ -1,5 +1,5 @@
 html {
-  scroll-behavior: smooth; /* Smooth scrolling behavior */
-  overscroll-behavior: none; /* Disables the rubber-band effect on over-scrolling */
+  scroll-behavior: smooth;
+  overscroll-behavior: none;
 }
 

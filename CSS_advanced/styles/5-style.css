@@ -7,11 +7,9 @@
 }
 
 html {
-  font-size: 62.5%; /* Set base font size to 62.5% (10px assuming default browser font size is 16px) */
+  font-size: 62.5%;
 }
 
 body {
-  font-size: var(--font-size-medium); /* Set body font size to font-size-medium */
+  font-size: var(--font-size-medium);
 }
-
-/* Other declarations in the stylesheet... */

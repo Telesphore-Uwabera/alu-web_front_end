@@ -5,7 +5,7 @@
   --nav-item-font-size: var(--font-size-medium);
   --nav-item-letter-spacing: 4%;
   --nav-item-display: inline-block;
-  --nav-item-margin: 0 0 calc(3 * var(--root-font-size)) 0;
+  --nav-item-margin: calc(3 * var(--root-font-size)) 0 0 0;
   --nav-item-link-hover: var(--color-primary);
 }
 
@@ -19,10 +19,11 @@
   margin: 0;
   padding: 0;
   text-align: center;
+  list-style: none; /* Added */
 }
 
 /* Styles for .nav-item */
-.nav-item {
+.nav .nav-item {
   font-family: var(--nav-item-font-family);
   font-weight: var(--nav-item-font-weight);
   font-size: var(--nav-item-font-size);
@@ -32,12 +33,12 @@
 }
 
 /* Styles for .nav-link */
-.nav-link {
+.nav .nav-link {
   display: block;
   padding: calc(0.5 * var(--root-font-size)) var(--root-font-size);
 }
 
 /* Hover styles for .nav-link */
-.nav-link:hover {
+.nav .nav-link:hover {
   color: var(--nav-item-link-hover);
 }

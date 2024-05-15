@@ -1,0 +1,6 @@
+/* Create a new row after each .row */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}

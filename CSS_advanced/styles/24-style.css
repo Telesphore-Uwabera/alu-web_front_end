@@ -3,14 +3,13 @@
   margin: 0; /* No margin at all */
 }
 
-/* Target anchor elements inside card-services */
+/* Target anchor links inside card-services */
 .card-services a {
   display: block; /* Render as block-level elements */
-  padding: calc(2 * var(--root-font-size)); /* Set padding to 2x the root element */
+  padding: 2rem; /* Set padding to 2rem */
   background-color: var(--color-light-grey); /* Set background color to color-light-grey */
   text-decoration: none; /* Remove any text decoration */
 }
-
 /* Hover state for anchor elements inside card-services */
 .card-services a:hover {
   color: var(--color-white); /* Set foreground color to color-white */

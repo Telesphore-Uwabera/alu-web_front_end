@@ -7,6 +7,7 @@
   --nav-item-display: inline-block;
   --nav-item-margin: calc(3 * var(--root-font-size)) 0 0 0;
   --nav-item-link-hover: var(--color-primary);
+  --root-font-size: 16px; /* Assuming root font size for calculation */
 }
 
 /* Styles for .navbar-menu */
@@ -17,9 +18,9 @@
 /* Styles for .nav */
 .nav {
   margin: 0;
-  padding: 0;
+  padding: var(--root-font-size) 0;
   text-align: center;
-  list-style: none; /* Added */
+  list-style: none;
 }
 
 /* Styles for .nav-item */
@@ -35,7 +36,7 @@
 /* Styles for .nav-link */
 .nav .nav-link {
   display: block;
-  padding: calc(0.5 * var(--root-font-size)) var(--root-font-size);
+  padding: calc(0.5 * var(--root-font-size)) 0;
 }
 
 /* Hover styles for .nav-link */

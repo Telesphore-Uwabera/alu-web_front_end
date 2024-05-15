@@ -1,8 +1,3 @@
-/* Card testimonial selector */
-.card-testimonial {
-  text-align: center; /* Center align the text */
-}
-
 /* Card avatar inside card-testimonial */
 .card-testimonial .card-avatar {
   border-radius: 50%; /* Round the radius on all sides at 50% */
@@ -12,7 +7,7 @@
 
 /* Cite HTML tag inside card-quote inside card-testimonial */
 .card-testimonial .card-quote cite {
-  display: block; /* Style as a block-level element */
-  padding-top: 1em; /* Pad the top with 1x the root element */
+  display: inline-block; /* Style as an inline-block element */
+  padding-top: 1rem; /* Pad the top with 1rem */
   color: var(--color-primary); /* Set the foreground color value to the value of the color-primary variable */
 }

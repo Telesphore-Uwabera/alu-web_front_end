@@ -19,3 +19,8 @@ nav .nav-item:hover .nav-link::before {
   background-color: var(--color-primary); /* Set background-color to color-primary */
   width: 100%; /* Set width to 100% */
 }
+/* Selector targeting the before pseudo elements of nav-link inside nav */
+nav .nav-link::before {
+  content: ""; /* Set content to empty */
+  /* Other styles */
+}

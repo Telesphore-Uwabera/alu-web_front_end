@@ -15,4 +15,5 @@
 .card-services a:hover {
   color: var(--color-white); /* Set foreground color to color-white */
   background-color: var(--color-primary); /* Set background color to color-primary */
+  text-decoration: none; /* Remove text decoration */
 }

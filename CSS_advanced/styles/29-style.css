@@ -4,7 +4,8 @@
 }
 
 /* Selector targeting the before pseudo elements of nav-link inside nav */
-nav .nav-link::before {
+:root {
+  --nav .nav-link::before {
   content: ""; /* Set content to empty */
   position: absolute; /* Set position to absolute */
   bottom: 0; /* Set bottom to 0 */
@@ -13,14 +14,10 @@ nav .nav-link::before {
   width: 0; /* Set width to 0 */
   height: 20%; /* Set height to 20% */
 }
-
+}
 /* Selector targeting the before pseudo elements of nav-link when nav-item is hovered and is inside nav */
 nav .nav-item:hover .nav-link::before {
   background-color: var(--color-primary); /* Set background-color to color-primary */
   width: 100%; /* Set width to 100% */
 }
-/* Selector targeting the before pseudo elements of nav-link inside nav */
-nav .nav-link::before {
-  content: ""; /* Set content to empty */
-  /* Other styles */
-}
+

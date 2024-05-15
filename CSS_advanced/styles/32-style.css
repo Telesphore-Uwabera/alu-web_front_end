@@ -8,6 +8,9 @@
 .card-work:hover .card-image {
   transform: scale(1.2); /* Scale transform on card-image when card-work is hovered */
 }
+.card-work:hover .card-image {
+  transition: var(--transition-duration) var(--transition-cubic-bezier); /* Transition on card-image when card-work is hovered */
+}
 
 .card-work:hover .card-outer {
   transform: scale(0.95); /* Scale transform on card-outer when card-work is hovered */

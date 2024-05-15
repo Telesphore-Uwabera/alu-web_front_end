@@ -1,0 +1,35 @@
+/* Custom properties */
+:root {
+  --section-padding: 5rem 0;
+  --section-header-padding: 0 0 3rem;
+  --section-body-padding: 0 0 3rem;
+  --section-footer-padding: 3rem 0 0;
+  --section-footer-align: center;
+  --footer-padding: 5rem 0 1rem;
+}
+
+/* Target the class .section */
+.section {
+  padding: var(--section-padding);
+}
+
+/* Styles for .section-header */
+.section-header {
+  padding: var(--section-header-padding);
+}
+
+/* Styles for .section-body */
+.section-body {
+  padding: var(--section-body-padding);
+}
+
+/* Styles for .section-footer */
+.section-footer {
+  padding: var(--section-footer-padding);
+  text-align: var(--section-footer-align);
+}
+
+/* Styles for .footer */
+.footer {
+  padding: var(--footer-padding);
+}

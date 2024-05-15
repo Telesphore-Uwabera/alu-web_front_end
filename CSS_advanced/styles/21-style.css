@@ -1,12 +1,12 @@
 /* Select all classes that start with "col-" */
 [class^="col-"] {
   float: left;
-  padding: calc(0.5 * var(--root-font-size)); /* Assuming --root-font-size is defined elsewhere */
+  padding: calc(0.5 * var(--root-font-size)); /* Adjusted padding */
 }
 
-/* Remove references to these common properties for individual col-1-3 and col-1-2 classes */
+/* Remove references to float and padding from the selectors for col-1-3 and col-1-2 classes */
 .col-1-3,
 .col-1-2 {
-  float: none; /* Reset float property */
-  padding: 0; /* Reset padding property */
+  float: none !important; /* Reset float property */
+  padding: 0 !important; /* Reset padding property */
 }

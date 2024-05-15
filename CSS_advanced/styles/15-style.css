@@ -2,4 +2,11 @@
   box-sizing: border-box;
 }
 
-/* Your CSS styles for html start here */
+/* Universal box sizing rule */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Your CSS styles start here */

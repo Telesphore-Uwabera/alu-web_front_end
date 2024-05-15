@@ -4,10 +4,6 @@
   --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
 }
 
-/* Transformations on the card work */
-.card-work:hover .card-image {
-  transform: scale(1.2); /* Scale transform on card-image when card-work is hovered */
-}
 .card-work:hover .card-image {
   transition: var(--transition-duration) var(--transition-cubic-bezier); /* Transition on card-image when card-work is hovered */
 }

@@ -1,0 +1,28 @@
+:root {
+  --color-primary: #d73953;
+  --color-black: #090909;
+  --color-white: #ffffff;
+  --color-light-grey: #f3f3f3;
+  --color-dark-grey: #353535;
+  --text-color: var(--color-black); /* Set text-color to color-black */
+  --font-family-base: 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'; /* Custom font-family base */
+  --font-family-title: 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'; /* Custom font-family title */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-title); /* Set font-family for all heading levels */
+}
+
+body {
+  color: var(--text-color); /* Reset color for body to text-color */
+  font-family: var(--font-family-base); /* Set font-family for body */
+}
+
+a {
+  color: var(--text-color); /* Reset color for anchor elements to text-color */
+}

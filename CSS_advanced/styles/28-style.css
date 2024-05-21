@@ -1,0 +1,27 @@
+/* Custom properties */
+:root {
+  --header-padding: 4rem 0 0;
+  --header-logo-position: relative;
+  --header-logo-link-display: inline-block;
+  --header-logo-link-position: absolute;
+  --header-logo-link-top: -1rem;
+  --header-logo-link-left: 0;
+}
+
+/* Header class selector */
+.header {
+  padding: var(--header-padding); /* Pad the header with the value within the variable header-padding */
+}
+
+/* Header logo class selector */
+.header-logo {
+  position: var(--header-logo-position); /* Position the header logo with the value of the variable header-logo-position */
+}
+
+/* Link inside header-logo class */
+.header-logo a {
+  display: var(--header-logo-link-display); /* Render the display using the value of the variable header-logo-link-display */
+  position: var(--header-logo-link-position); /* Position the links with the value of the variable header-logo-link-position */
+  top: var(--header-logo-link-top); /* Set the vertical position of the element using header-logo-link-top */
+  left: var(--header-logo-link-left); /* Set the horizontal position of the element using header-logo-link-left */
+}

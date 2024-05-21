@@ -1,0 +1,44 @@
+/* Include normalize.css */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+/* Your custom styles start here */
+/* New declaration for section-title */
+.section-title {
+  font-family: var(--font-family-title);
+  font-size: var(--font-size-xx-large);
+  font-weight: var(--font-weight-bold);
+  margin: var(--section-title-margin);
+  color: var(--section-title-color);
+}
+
+/* Existing section-tagline declaration */
+.section-tagline {
+  font-family: var(--font-family-title);
+  text-transform: var(--section-tagline-transform);
+  font-weight: var(--font-weight-bold);
+}
+
+/* Target anchor elements containing hyperlinks */
+a[href] {
+  font-style: italic;
+}
+
+/* Target visited state for the link */
+a[href]:visited {
+  /* Your styles for visited links */
+}
+
+/* Target hover state for the link */
+a[href]:hover {
+  text-decoration: underline;
+}
+
+/* Target active state for the link */
+a[href]:active {
+  /* Your styles for active links */
+}
+
+/* Set the background color with the variable color-light-grey */
+a[href] {
+  background-color: var(--color-light-grey);
+}

@@ -1,0 +1,30 @@
+/* Custom properties */
+:root {
+  --transition-duration: .3s;
+  --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
+}
+
+.card-work:hover .card-image {
+  transition: var(--transition-duration) var(--transition-cubic-bezier); /* Transition on card-image when card-work is hovered */
+}
+
+.card-work:hover .card-outer {
+  transform: scale(0.95); /* Scale transform on card-outer when card-work is hovered */
+}
+
+/* Animations on the navigation items */
+.nav .nav-link::before {
+  transition: var(--transition-duration) var(--transition-cubic-bezier); /* Transition on navigation items */
+}
+
+/* Animation on the button background */
+.button:hover {
+  transition-duration: var(--transition-duration); /* Duration of transition on button hover */
+  transition-property: color, background-color; /* Properties to animate on button hover */
+}
+
+/* Transitions on the card works */
+.card-work .card-inner,
+.card-work .card-image {
+  transition: var(--transition-duration) var(--transition-cubic-bezier); /* Transition on card works */
+}

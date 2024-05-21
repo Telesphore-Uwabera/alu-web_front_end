@@ -1,0 +1,21 @@
+:root {
+  --color-primary: #d73953;
+  --color-black: #090909;
+  --color-white: #ffffff;
+  --color-light-grey: #f3f3f3;
+  --color-dark-grey: #353535;
+  --text-color: var(--color-black); /* Set text-color to color-black */
+}
+
+.section-tagline,
+.card-category {
+  color: var(--color-primary); /* Reset color for section-tagline and card-category to color-primary */
+}
+
+body {
+  color: var(--text-color); /* Reset color for body to text-color */
+}
+
+a {
+  color: var(--text-color); /* Reset color for anchor elements to text-color */
+}

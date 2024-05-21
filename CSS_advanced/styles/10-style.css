@@ -1,0 +1,13 @@
+:root {
+  --section-header-align: center;
+}
+
+/* New declaration for section-header */
+.section-header {
+  text-align: var(--section-header-align);
+}
+
+/* Existing section-tagline declaration */
+.section-tagline {
+  /* existing styles for section-tagline */
+}

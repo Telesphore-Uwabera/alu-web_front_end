@@ -1,16 +1,12 @@
 // 103-sort_strings.scss
 
-// Original list
 $list_to_sort: john anna zoe kim felicia carrie;
 
-// Function to sort a list
 @function sort-list($list) {
   @return sort($list);
 }
 
-// Sort the list
 $sorted_list: sort-list($list_to_sort);
 
-// Debug output of the sorted list
 @debug $sorted_list;
 

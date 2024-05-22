@@ -1,12 +1,15 @@
-// 103-sort_strings.scss
+// 103-sort_list.scss
 
 $list_to_sort: john anna zoe kim felicia carrie;
 
 @function sort-list($list) {
-  @return sort($list);
+  $sorted-list: ();
+  @each $item in sort($list) {
+    $sorted-list: append($sorted-list, $item);
+  }
+  @return $sorted-list;
 }
 
 $sorted_list: sort-list($list_to_sort);
 
 @debug $sorted_list;
-

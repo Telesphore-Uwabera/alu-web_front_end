@@ -7,6 +7,11 @@
     /* Move all declarations inside section-hero inside the new hero-homepage class selector */
     position: relative;
     margin-top: -8.5rem;
+    /* Add background properties */
+    background-color: #ffffff; /* Example color */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* Inside section-hero class selector */

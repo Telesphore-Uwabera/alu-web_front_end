@@ -1,0 +1,8 @@
+/* 9-styles.css */
+
+/* Section SERVICES section */
+
+/* Section ABOUT US section */
+.section-about-us [class^="col-"] {
+    align-self: center;
+}

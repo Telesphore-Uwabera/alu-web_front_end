@@ -1,0 +1,26 @@
+/* 6-styles.css */
+
+/* Navbar section */
+
+/* Modify the display property for the nav class selector */
+.nav {
+    display: flex;
+}
+
+/* Remove the display declaration from .nav .nav-item selector */
+.nav .nav-item {
+    /* display: block; */ /* Remove this line */
+}
+
+/* Target .nav-item + .nav-item inside nav class */
+.nav .nav-item + .nav-item {
+    /* Move the margin declaration here */
+    margin: 0 0 0 2rem; /* Updated margin value */
+}
+
+/* Variables section */
+
+/* Change the value of the variable nav-item-margin */
+:root {
+    --nav-item-margin: 0 0 0 2rem; /* Updated margin value */
+}

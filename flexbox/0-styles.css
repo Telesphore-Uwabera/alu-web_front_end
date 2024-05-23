@@ -26,19 +26,13 @@ nav ul li a {
     color: white;
 }
 
-/* Grid */
-.grid {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.row {
-    display: flex;
-}
-
-[class*="col-"] {
-    flex: 1;
-    padding: 10px;
+/* Sections */
+section {
+    padding: 20px;
+    margin: 20px 0;
     border: 1px solid #ccc;
 }
 
+section h2 {
+    margin-bottom: 10px;
+}

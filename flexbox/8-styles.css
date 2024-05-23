@@ -1,0 +1,11 @@
+/* 8-styles.css */
+
+/* Section HERO section */
+.section-hero .section-inner {
+    display: flex; /* Display flex */
+    flex-direction: column; /* Arrange items in a column */
+    align-items: flex-start; /* Align items to the start of the cross axis */
+    justify-content: center; /* Center items along the main axis */
+    min-height: 50vh; /* Minimum height of 50% of the viewport height */
+    padding: 0; /* Remove padding */
+}

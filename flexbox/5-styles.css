@@ -1,5 +1,15 @@
+/* 5-styles.css */
+
 /* Header section */
 .header-container {
     display: flex;
     justify-content: space-between;
+}
+
+/* Remove the following rules */
+:root {
+    --header-logo-position: relative;
+    --header-logo-link-display: inline-block;
+    --header-logo-link-top: 50%;
+    --header-logo-link-left: 50%;
 }

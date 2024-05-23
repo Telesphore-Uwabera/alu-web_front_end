@@ -5,8 +5,6 @@
 /* After .section-hero, add a new hero-homepage class selector */
 .hero-homepage {
     /* Move all declarations inside section-hero inside the new hero-homepage class selector */
-    position: relative;
-    margin-top: -8.5rem;
     /* Add background properties */
     background-color: #ffffff; /* Example color */
     background-position: center;
@@ -17,6 +15,8 @@
 /* Inside section-hero class selector */
 .section-hero {
     /* Remove the moved declarations */
+    position: relative; /* Ensure position is set to relative */
+    margin-top: -8.5rem; /* Ensure margin-top is set to -8.5rem */
 }
 
 /* Below, target .section-body inside section-hero class */

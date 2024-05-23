@@ -1,0 +1,22 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+/* Remove header-logo-position */
+/* Remove header-logo-link-display */
+/* Remove header-logo-link-position */
+/* Remove header-logo-link-top */
+/* Remove header-logo-link-left */
+
+/* Header section */
+.header-container {
+    display: flex; /* Added */
+    justify-content: space-between; /* Added */
+}
+
+/* Remove header-logo and header-logo a rules */
+/* Remove navbar-menu rule */

@@ -13,20 +13,21 @@ $list_to_sort_1: bob anna sylvain john ludo colin patrick;
   }
 }
 
-// Function to sort a list using insertion sort algorithm
+// Function to sort a list
 @function sort-list($list) {
   $sorted: ();
   @each $item in $list {
     $inserted: false;
     @for $i from 1 through length($sorted) {
       @if str-compare($item, nth($sorted, $i)) < 0 {
-        $sorted: append(slice($sorted, 1, $i - 1), $item) $sorted: set-nth($sorted, $i, nth($list, $j));
+        $sorted: join(slice($sorted, 1, $i - 1), $item, comma);
+        $sorted: join($sorted, slice($sorted, $i, length($sorted)), comma);
         $inserted: true;
         @break;
       }
     }
-    @if $inserted == false {
-      $sorted: append($sorted, $item);
+    @if not $inserted {
+      $sorted: append($sorted, $item, comma);
     }
   }
   @return $sorted;

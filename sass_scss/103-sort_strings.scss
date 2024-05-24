@@ -1,49 +1,44 @@
 // Original lists
-$list_to_sort_0: |anna|carrie|felicia|john|kim|zoe;
-$list_to_sort_1: |anna|bob|colin|john|ludo|patrick|sylvain;
+$list_to_sort_0: john anna zoe kim felicia carrie;
+$list_to_sort_1: bob anna sylvain john ludo colin patrick;
 
-// Function to insert an item into a sorted list
-@function insert-sorted($list, $item) {
-  $length: length($list);
-  @if $length == 0 {
-    @return $item;
-  }
-
-  @for $i from 1 through $length {
-    @if str-compare($item, nth($list, $i)) < 0 {
-      @return append(slice($list, 1, $i - 1), $item) $list: set-nth($list, $i, nth($list, $j));
-    }
-  }
-  @return append($list, $item);
-}
-
-// Function to sort a list
-@function sort-list($list) {
-  $sorted-list: ();
-  @each $item in $list {
-    $sorted-list: insert-sorted($sorted-list, $item);
-  }
-  @return $sorted-list;
-}
-
-// Compare strings alphabetically
+// Function to compare strings alphabetically
 @function str-compare($str1, $str2) {
-  $min-length: min(str-length($str1), str-length($str2));
-  @for $i from 1 through $min-length {
-    @if str-slice($str1, $i, $i) < str-slice($str2, $i, $i) {
-      @return -1;
-    }
-    @else if str-slice($str1, $i, $i) > str-slice($str2, $i, $i) {
-      @return 1;
-    }
-  }
-  @if str-length($str1) < str-length($str2) {
+  @if $str1 == $str2 {
+    @return 0;
+  } @else if $str1 < $str2 {
     @return -1;
-  }
-  @else if str-length($str1) > str-length($str2) {
+  } @else {
     @return 1;
   }
-  @return 0;
+}
+
+// Function to sort a list using insertion sort algorithm
+@function sort-list($list) {
+  $sorted: ();
+  @each $item in $list {
+    $inserted: false;
+    @for $i from 1 through length($sorted) {
+      @if str-compare($item, nth($sorted, $i)) < 0 {
+        $sorted: append(slice($sorted, 1, $i - 1), $item) $sorted: set-nth($sorted, $i, nth($list, $j));
+        $inserted: true;
+        @break;
+      }
+    }
+    @if $inserted == false {
+      $sorted: append($sorted, $item);
+    }
+  }
+  @return $sorted;
+}
+
+// Function to format the sorted list as a string
+@function format-list($list) {
+  $output: "";
+  @each $item in $list {
+    $output: $output + "|" + $item;
+  }
+  @return $output;
 }
 
 // Sort the lists
@@ -51,5 +46,5 @@ $sorted_list_0: sort-list($list_to_sort_0);
 $sorted_list_1: sort-list($list_to_sort_1);
 
 // Print the sorted lists using @debug
-@debug $sorted_list_0;
-@debug $sorted_list_1;
+@debug format-list($sorted_list_0);
+@debug format-list($sorted_list_1);

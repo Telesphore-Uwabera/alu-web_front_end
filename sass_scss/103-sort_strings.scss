@@ -1,11 +1,23 @@
-// 103-sort_list.scss
+// Original list
+$list_to_sort: john, anna, zoe, kim, felicia, carrie;
 
-// First list to sort and debug
-$list_to_sort_0: john anna zoe kim felicia carrie;
-$sorted_list_0: sort($list_to_sort_0);
-@debug "Sorted list 0: #{$sorted_list_0}";
+// Function to sort a list
+@function sort-list($list) {
+  $length: length($list);
+  @for $i from 1 through $length {
+    @for $j from $i through $length {
+      @if str-length(nth($list, $i)) > str-length(nth($list, $j)) {
+        $temp: nth($list, $i);
+        $list: set-nth($list, $i, nth($list, $j));
+        $list: set-nth($list, $j, $temp);
+      }
+    }
+  }
+  @return $list;
+}
 
-// Second list to sort and debug
-$list_to_sort_1: bob anna sylvain john ludo colin patrick;
-$sorted_list_1: sort($list_to_sort_1);
-@debug "Sorted list 1: #{$sorted_list_1}";
+// Sort the list
+$sorted_list: sort-list($list_to_sort);
+
+// Print the sorted list using @debug
+@debug $sorted_list;

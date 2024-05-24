@@ -1,0 +1,55 @@
+/* Basic reset to remove any default margins/padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Flex container styling */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Box styling */
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    width: 100px;
+    height: 100px;
+}
+
+.box1 {
+    background-color: #4CAF50; /* Green */
+    order: 1;
+}
+
+.box2 {
+    background-color: #2196F3; /* Blue */
+    order: 2;
+}
+
+.box3 {
+    background-color: #3F51B5; /* Indigo */
+    order: 3;
+    width: 200px;
+    height: 200px;
+}
+
+.box4 {
+    background-color: #9C27B0; /* Purple */
+    order: 4;
+}
+
+.box5 {
+    background-color: #FF5722; /* Orange */
+    order: 5;
+}

@@ -3,7 +3,7 @@
     --font-size-x-large: 1.5rem;
     --font-size-small: 0.875rem;
     --color-primary: #3498db;
-    --color-light-grey: #a0a0a0;
+    --color-grey: #a0a0a0; /* Ensure this variable is correctly defined */
 }
 
 /* General styles */
@@ -45,7 +45,7 @@ main {
     margin: 1rem 0;
     padding: 0 .5rem;
     font-size: var(--font-size-small);
-    color: var(--color-light-grey);
+    color: var(--color-grey); /* Use the correct variable here */
     text-align: center;
 }
 
@@ -65,7 +65,7 @@ main {
 .post-meta-list [class^="post-meta-"] {
     margin-bottom: 1rem;
     padding-bottom: 1rem;
-    border-bottom: 0.2rem solid var(--color-light-grey);
+    border-bottom: 0.2rem solid var(--color-grey); /* Use the correct variable here */
 }
 
 .post-meta-list [class^="post-meta-"]:last-child {

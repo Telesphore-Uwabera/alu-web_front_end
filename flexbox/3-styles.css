@@ -1,0 +1,50 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Sections */
+section {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+}
+
+section h2 {
+    margin-bottom: 10px;
+}
+
+/* Section Latest news ============================= */
+.section-latest-news .row {
+    flex-direction: row-reverse;
+}
+
+/* Section SERVICES ============================= */
+.section-services .row {
+    flex-wrap: wrap;
+}
+
+/*** 4. CARD ***/

@@ -1,0 +1,98 @@
+/* Variables */
+:root {
+    --font-size-x-large: 1.5rem;
+    --font-size-small: 0.875rem;
+    --color-primary: #3498db;
+    --color-grey: #a0a0a0; /* Ensure this variable is correctly defined */
+}
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 2rem;
+}
+
+.section-hero {
+    background-color: #f4f4f4;
+    padding: 2rem 0;
+}
+
+.main-article .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-content {
+    width: 100%;
+}
+
+.post-content p:first-child {
+    font-size: var(--font-size-x-large);
+}
+
+.post-content .img-caption {
+    margin: 1rem 0;
+    padding: 0 .5rem;
+    font-size: var(--font-size-small);
+    color: var(--color-grey); /* Use the correct variable here */
+    text-align: center;
+}
+
+/* Post Meta
+   ============================= */
+.post-meta-list {
+    flex-direction: column;
+}
+
+.post-meta-list strong {
+    color: var(--color-primary);
+    font-size: var(--font-size-small);
+    text-transform: uppercase;
+    display: block;
+}
+
+.post-meta-list [class^="post-meta-"] {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 0.2rem solid var(--color-grey); /* Use the correct variable here */
+}
+
+.post-meta-list [class^="post-meta-"]:last-child {
+    border: none;
+    margin-bottom: 3rem;
+}
+
+/* Tag list
+   ============================= */
+.tag-list {
+    padding: 0;
+    list-style: none;
+}
+
+.tag-list li {
+    display: inline;
+}
+
+.tag-list li::after {
+    content: ", ";
+}
+
+.tag-list li:last-child::after {
+    content: "";
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+}

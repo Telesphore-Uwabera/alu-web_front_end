@@ -1,11 +1,51 @@
-// 103-sort_list.scss
-
-// First list to sort and debug
+// Original lists
 $list_to_sort_0: john anna zoe kim felicia carrie;
-$sorted_list_0: sort($list_to_sort_0);
-@debug "Sorted list 0: #{$sorted_list_0}";
-
-// Second list to sort and debug
 $list_to_sort_1: bob anna sylvain john ludo colin patrick;
-$sorted_list_1: sort($list_to_sort_1);
-@debug "Sorted list 1: #{$sorted_list_1}";
+
+// Function to compare strings alphabetically
+@function str-compare($str1, $str2) {
+  @if $str1 == $str2 {
+    @return 0;
+  } @else if $str1 < $str2 {
+    @return -1;
+  } @else {
+    @return 1;
+  }
+}
+
+// Function to sort a list
+@function sort-list($list) {
+  $sorted: ();
+  @each $item in $list {
+    $inserted: false;
+    @for $i from 1 through length($sorted) {
+      @if str-compare($item, nth($sorted, $i)) < 0 {
+        $sorted: join(slice($sorted, 1, $i - 1), $item, comma);
+        $sorted: join($sorted, slice($sorted, $i, length($sorted)), comma);
+        $inserted: true;
+        @break;
+      }
+    }
+    @if not $inserted {
+      $sorted: append($sorted, $item, comma);
+    }
+  }
+  @return $sorted;
+}
+
+// Function to format the sorted list as a string
+@function format-list($list) {
+  $output: "";
+  @each $item in $list {
+    $output: $output + "|" + $item;
+  }
+  @return $output;
+}
+
+// Sort the lists
+$sorted_list_0: sort-list($list_to_sort_0);
+$sorted_list_1: sort-list($list_to_sort_1);
+
+// Print the sorted lists using @debug
+@debug format-list($sorted_list_0);
+@debug format-list($sorted_list_1);

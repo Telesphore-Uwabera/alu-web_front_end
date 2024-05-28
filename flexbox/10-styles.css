@@ -1,0 +1,31 @@
+/* 10-styles.css */
+
+/* Section HERO section */
+
+/* After .section-hero, add a new hero-homepage class selector */
+.hero-homepage {
+    /* Move all declarations inside section-hero inside the new hero-homepage class selector */
+    /* Add background properties */
+    background-color: #ffffff; /* Example color */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Inside section-hero class selector */
+.section-hero {
+    /* Remove the moved declarations */
+    position: relative; /* Ensure position is set to relative */
+    margin-top: -8.5rem; /* Ensure margin-top is set to -8.5rem */
+}
+
+/* Below, target .section-body inside section-hero class */
+.section-hero .section-body {
+    padding: 10rem 4rem;
+}
+
+/* Below, target .section-category inside section-hero class */
+.section-hero .section-category {
+    color: var(--color-white);
+    text-transform: uppercase;
+}

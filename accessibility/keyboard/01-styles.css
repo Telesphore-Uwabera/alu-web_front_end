@@ -1,4 +1,5 @@
 .card-work .card-title a {
+    opacity: 0;
 }
 
 /* For .card-work .card-title a with the a in state focus and .card-work:hover .card-title a */

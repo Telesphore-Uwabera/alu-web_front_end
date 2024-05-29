@@ -1,22 +1,3 @@
-/* Card WORK section */
-
-/* Removed opacity: 0 from .card-title */
-.card-work .card-title {
-    /* Other styles if any */
-}
-
-/* Removed hover styles */
-/*
-.card-work:hover .card-inner {
-    Your styles here
-}
-
-.card-work:hover .card-title {
-    Your styles here
-}
-*/
-
-/* Target the selector .card-work .card-title a and add opacity: 0 */
 .card-work .card-title a {
     opacity: 0;
 }

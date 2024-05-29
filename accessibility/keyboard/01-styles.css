@@ -1,0 +1,32 @@
+/* Card WORK section */
+
+/* Removed opacity: 0 from .card-title */
+.card-work .card-title {
+    /* Other styles if any */
+}
+
+/* Removed hover styles */
+/*
+.card-work:hover .card-inner {
+    Your styles here
+}
+
+.card-work:hover .card-title {
+    Your styles here
+}
+*/
+
+/* Initial state for card-title a */
+.card-work .card-title a {
+    opacity: 0;
+    transition: opacity 0.3s, height 0.3s, background-color 0.3s;
+}
+
+/* Focus and hover state for card-title a */
+.card-work .card-title a:focus,
+.card-work:hover .card-title a {
+    opacity: 1;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+

@@ -16,13 +16,12 @@
 }
 */
 
-/* Initial state for card-title a */
+/* Target the selector .card-work .card-title a and add opacity: 0 */
 .card-work .card-title a {
     opacity: 0;
-    transition: opacity 0.3s, height 0.3s, background-color 0.3s;
 }
 
-/* Focus and hover state for card-title a */
+/* For .card-work .card-title a with the a in state focus and .card-work:hover .card-title a */
 .card-work .card-title a:focus,
 .card-work:hover .card-title a {
     opacity: 1;

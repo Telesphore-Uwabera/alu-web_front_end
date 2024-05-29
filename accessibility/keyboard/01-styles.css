@@ -1,5 +1,8 @@
 /*Card Work */
-.card-work .card-title a:focus {
+.card-work .card-title a {
+ 
+}
+.card-work .card-title a {
     opacity: 0;
 }
 

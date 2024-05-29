@@ -1,5 +1,7 @@
 /*Card Work */
-.card-work .card-title 
+.card-work .card-title {
+    /* No opacity: 0; */
+}
 .card-work .card-title a {
     opacity: 0;
 }

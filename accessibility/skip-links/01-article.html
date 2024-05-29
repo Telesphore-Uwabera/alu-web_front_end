@@ -20,7 +20,7 @@
         <li><a href="#a11y-main-content" class="skip-link">Skip to main content</a></li>
       </ul>
     </nav>
-    <!– Header –>
+    <!-- Header -->
     <header class="header" data-section-theme="dark">
       <div class="container">
         <div class="header-container">
@@ -33,8 +33,8 @@
           <label class="menu-icon" for="menu-btn">
             <span class="navicon"></span>
           </label>
-          <nav class="navbar-menu">
-            <ul class="nav">
+          <nav class="navbar-menu" tabindex="-1">
+            <ul class="nav" id="a11y-primary-nav">
               <li class="nav-item">
                 <a href="/" class="nav-link">Home</a>
               </li>
@@ -74,10 +74,10 @@
         </div>
       </div>
     </header>
-    <!– Main –>
-    <main>
+    <!-- Main -->
+    <main tabindex="-1" id="a11y-main-content">
       <h1 class="visually-hidden">Homepage</h1>
-      <!– Hero section –>
+      <!-- Hero section -->
       <section class="section-hero hero-homepage" data-section-theme="dark">
         <div class="container">
           <div class="section-body">

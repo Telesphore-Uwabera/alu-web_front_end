@@ -1,6 +1,8 @@
-/*Card Work */
-.card-work .card-title a {
-    opacity: ; 
+.card-work .card-title {
+  text-align: center;
+  margin: 0;
+  height: 100%;
+  position: relative;
 }
 .card-work .card-title a {
     opacity: 0;

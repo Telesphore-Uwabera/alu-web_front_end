@@ -1,3 +1,4 @@
+/* Card WORK section */
 .card-work .card-title a {
     opacity: 0;
 }
@@ -10,3 +11,16 @@
     background-color: rgba(0, 0, 0, 0.7);
 }
 
+/* Remove the following styles */
+.card-work .card-title {
+    opacity: 0;
+}
+
+.card-work:hover .card-inner {
+    transform: scale(1.05);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card-work:hover .card-title {
+    opacity: 1;
+}

@@ -18,7 +18,7 @@ function showCookies() {
     }, {});
 
     const p = document.createElement('p');
-    p.innerHTML = `Cookies: ${JSON.stringify(cookies)}`;
+    p.innerHTML = `Cookies: ${document.cookie}`;
 
     const displayDiv = document.getElementById('cookieDisplay');
     displayDiv.innerHTML = ''; // Clear previous content

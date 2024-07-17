@@ -13,25 +13,27 @@
             max-width: 600px;
             margin: 0 auto;
         }
-        h1 {
+        h1, h2 {
             font-size: 24px;
             font-weight: bold;
         }
         .input-group {
             margin-bottom: 10px;
         }
-        label {
-            display: block;
-            margin-bottom: 5px;
-        }
         input {
             padding: 8px;
-            width: calc(100% - 20px);
+            width: 200px;
+            margin-right: 10px;
             box-sizing: border-box;
         }
         button {
-            padding: 10px 20px;
+            padding: 8px 16px;
             margin-top: 10px;
+            display: inline-block;
+        }
+        #cookieDisplay {
+            margin-top: 10px;
+            font-size: 16px;
         }
     </style>
 </head>
@@ -39,14 +41,10 @@
     <div class="container">
         <h1>Login to the website</h1>
         <div class="input-group">
-            <label for="firstname">Firstname</label>
             <input type="text" id="firstname" placeholder="Firstname">
-        </div>
-        <div class="input-group">
-            <label for="email">Email</label>
             <input type="text" id="email" placeholder="Email">
+            <button onclick="setCookies()">Log me in</button>
         </div>
-        <button onclick="setCookies()">Log me in</button>
         <h2>Cookies</h2>
         <button onclick="showCookies()">Show the cookies</button>
         <div id="cookieDisplay"></div>

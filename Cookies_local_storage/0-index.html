@@ -4,19 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cookie Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .input-group {
+            margin-bottom: 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input {
+            padding: 8px;
+            width: calc(100% - 20px);
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 20px;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-    <div>
-        <label for="firstname">First Name:</label>
-        <input type="text" id="firstname" name="firstname">
+    <div class="container">
+        <h1>Login to the website</h1>
+        <div class="input-group">
+            <label for="firstname">Firstname</label>
+            <input type="text" id="firstname" placeholder="Firstname">
+        </div>
+        <div class="input-group">
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Email">
+        </div>
+        <button onclick="setCookies()">Log me in</button>
+        <h2>Cookies</h2>
+        <button onclick="showCookies()">Show the cookies</button>
+        <div id="cookieDisplay"></div>
     </div>
-    <div>
-        <label for="email">Email:</label>
-        <input type="text" id="email" name="email">
-    </div>
-    <button onclick="setCookies()">Log me in</button>
-    <button onclick="showCookies()">Show the cookies</button>
-    <div id="cookieDisplay"></div>
     <script src="src/index.js"></script>
 </body>
 </html>
